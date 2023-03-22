@@ -74,7 +74,7 @@ func FileExists(t *testing.T, filePath string) (bool, error) {
 // and returns the caller to the initial working directory.
 // usage:
 //
-//	defer within(t, "somedir")()
+//	defer within(t, "so medir")()
 func Within(t *testing.T, root string) func() {
 	t.Helper()
 	cwd := pwd(t)
