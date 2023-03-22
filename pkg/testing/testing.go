@@ -17,7 +17,7 @@ package testing
 
 import (
 	"fmt"
-"net"
+	"net"
 	"net/http"
 	"net/http/cgi"
 	"os"
