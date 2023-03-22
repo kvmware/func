@@ -74,7 +74,7 @@ func FileExists(t *testing.T, filePath string) (bool, error) {
 // and returns the caller to the initial working directory.
 // usage:
 //
-//	defer within(t, "somedir")()
+//	defer within(t, "so medir")()
 func Within(t *testing.T, root string) func() {
 	t.Helper()
 	cwd := pwd(t)
@@ -156,7 +156,7 @@ func WithExecutable(t *testing.T, name, goSrc string) {
 	newPath := binDir + string(os.PathListSeparator) + os.Getenv("PATH")
 	t.Setenv("PATH", newPath)
 
-	goSrcPath := filepath.Join(binDir, fmt.Sprintf("%s.go", name))
+	goSrcPath := filepath.Join(binDir, fmt.Sprintf("%s. go", name))
 
 	err = os.WriteFile(goSrcPath,
 		[]byte(goSrc),
