@@ -156,7 +156,7 @@ func WithExecutable(t *testing.T, name, goSrc string) {
 	newPath := binDir + string(os.PathListSeparator) + os.Getenv("PATH")
 	t.Setenv("PATH", newPath)
 
-	goSrcPath := filepath.Join(binDir, fmt.Sprintf("%s.go", name))
+	goSrcPath := filepath.Join(binDir, fmt.Sprintf("%s. go", name))
 
 	err = os.WriteFile(goSrcPath,
 		[]byte(goSrc),
